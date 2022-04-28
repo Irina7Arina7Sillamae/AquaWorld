@@ -239,14 +239,20 @@ th {
   Me   
 ------------------------*/
 .fish {
-  margin: -15px auto 10px;
+  margin: -10px auto 0;
   box-shadow:6px 6px 6px #797979;
   border-radius: 5px;
 }
+.divBox .zoom {
+  box-shadow:6px 6px 6px #797979;
+  border-radius: 5px;
+
+}
+
 .zoom {
   /* padding: 50px;
   background-color: green; */
-  transition: transform .5s;
+  transition: transform 1s;
   /* width: 200px;
   height: 200px;
   margin: 0 auto; */

@@ -1,6 +1,7 @@
 <?php
 
 class Controller {
+    //-----------------------------------Products
     public static function StartSite() {
         $arr = Products::getLast6Products();
         include_once 'view/start.php';
@@ -21,6 +22,13 @@ class Controller {
         $n = Products::getProductsByID($id);
         include_once 'view/readProducts.php';
     }
+
+     //-----------------------------------Category
+     public static function CategoryByID($id) {
+        $k = Category::getCategoryByID($id);
+        include_once 'view/categoryByID.php';
+     }
+
      //-----------------------------------OverProducts
    public static function AllOverProducts() {
         $arr = OverProducts::getAllOverProducts();
@@ -85,4 +93,6 @@ class Controller {
 }
 // end class
 // $c - текст комментария
-//  id - номер product
+// id - номер product
+
+// $k

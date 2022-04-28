@@ -9,7 +9,7 @@ class ViewOverProducts {
             echo '<div class="col">';
             echo '<div class="thumbnail">';
             echo '<div class="zoom">';
-            echo '<a ><img src="data:image/jpeg;base64,'.base64_encode($value['picture']).'"width=198 height=150 /></a><br>';
+            echo '<a ><img src="data:image/jpeg;base64,'.base64_encode($value['picture']).'"width="230"></a><br>';
             echo '</div>';
             echo "<h3>".$value['title']."</h3>";
             echo '</div>';

@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Products</title>
+    <title>AquaWorld</title>
 </head>
 
 <body>
@@ -29,8 +29,8 @@
             </li>
             <li><a class="zoom" href="./">StartPage</a></li>
             <li><a class="zoom" href="aquarium">Aquarium</a></li>
-            <li><a class="zoom" href="info">Info</a></li>
             <li><a class="zoom" href="registerForm">Registration</a></li>
+            <li><a class="zoom" href="info">Info</a></li>
             <div class="pull-right">
                 <li>
                     <form action="search">

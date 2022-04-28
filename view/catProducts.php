@@ -6,6 +6,7 @@ ob_start();
 
 <br>
 
+
 <?php
 ViewProducts::ProductsByCategory($arr);
 $content = ob_get_clean();
