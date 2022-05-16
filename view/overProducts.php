@@ -28,7 +28,7 @@ class ViewOverProducts {
     //    }
     //}
     public static function ReadOverProducts ($n) {
-        echo "<h2>".$n['title']."</h2>";
+        echo "<h2>".$n['title']."AAA"."</h2>";
         //Controller::CommentsCountWithAncor($n['id']);   
         echo '<br><img class = "zoom" src="data:image/ipeg;base64,'.base64_encode($n['picture']).'"
         width=250 height=200/><br>';   

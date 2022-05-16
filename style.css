@@ -21,6 +21,9 @@ h3 {
   color: #007bff;
   text-shadow: 1px 2px 1px #797979;
 }
+h3 {
+  margin-top: 10px;
+}
 
 /* HEADER =================================================================== */
 
@@ -304,3 +307,11 @@ element.style {
 .ytp-title-beacon {
   font-size: 0;
 }
+
+.reg {
+  background-color: rgb(187, 237, 251);
+}
+.register {
+  color: #007bff;
+}
+

@@ -1,6 +1,11 @@
 <?php
 class ViewProducts {
 
+    public static function CategoryByID($k) {
+        echo "<h2>".$k['name']."</h2>";
+        Controller::CategoryByID($k['id']); 
+    }
+
     public static function ProductsByCategory ($arr) {
         echo '<div class="container">';
         echo '<div class="row">';
@@ -11,7 +16,7 @@ class ViewProducts {
             echo '<div class="zoom">';
             echo '<img class="fish" src="data:image/jpeg;base64,'.base64_encode($value['picture']).'"width=230><br>';
             echo '</div>';
-            echo "<h3 mt-5>".$value['title']."</h3>";
+            echo "<h3>".$value['title']."</h3>";
             echo '</div>';
             Controller::CommentsCount($value['id']);
             echo "<a href='products?id=".$value['id']."'>Next</a><br>";
@@ -28,7 +33,8 @@ class ViewProducts {
         }
     }
     public static function ReadProducts ($n) {
-        echo "<h2>".$n['title']."</h2>";
+        echo "<h2>".$n['title']."AAA"."</h2>";
+        echo "<h2>".$n['name']."AAA"."</h2>";
         Controller::CommentsCountWithAncor($n['id']);   
         echo '<br><img class = "zoom" src="data:image/ipeg;base64,'.base64_encode($n['picture']).'"
         width="300"><br>';   

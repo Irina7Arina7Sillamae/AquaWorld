@@ -23,6 +23,7 @@ elseif($path == 'products' and isset($_GET['id'])) {
 
 
 //-----------------------------------------category by ID
+//-----------------------------------------category by ID
 elseif($path == 'category' and isset($_GET['id'])) {
     $response = Controller::CategoryByID($_GET['id']);
 }

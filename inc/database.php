@@ -10,7 +10,7 @@ class database {
         $this->host = 'localhost';
         $this->user = 'root';
         $this->password = '';
-        $this->baseName = 'trading';
+        $this->baseName = 'aquaworld';
         $this->connect();
     }
     function __destruct() {
