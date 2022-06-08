@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Dashboard</title>
+<title>AW Dashboard</title>
 <link href="public/css/bootstrap.css" rel="stylesheet">
 <link href="public/css/mystyle.css" rel="stylesheet">
 <!-- Font Awesome -->   
@@ -29,12 +29,13 @@
  
 if(isset($_SESSION["status"]) && $_SESSION["status"]=="admin") {
  
-            echo '<h4><a href="../" target=_blank style="color: #007bff;">Web site TradingPortal</a>';
-            echo '   &#187 <a href="./" style="color: #007bff;">Start admin</a>';
-            echo '   &#187 <a href="categoryAdmin" style="color: #007bff;">Products categories</a>';
+            echo '<h4><a href="../" target=_blank style="color: #007bff;">AquaWorld</a>';
+            echo '   &#187 <a href="./" style="color: #007bff;">StartAdmin</a>';
+            echo '   &#187 <a href="categoryAdmin" style="color: #007bff;">ProductsCategories</a>';
             echo '   &#187 <a href="productsAdmin" style="color: #007bff;">ProductsList</a>';
             echo '   &#187 <a href="overProductsAdmin" style="color: #007bff;">OverProductsList</a>';
             
+
             echo ' </h4>';
 }else{
     echo '<h4>You have no rights!</h4>';
@@ -54,7 +55,7 @@ if(isset($_SESSION["status"]) && $_SESSION["status"]=="admin") {
             
     </div>
     <footer class="footer">
-        <p style="color: #007bff;"><i class="fa fa-child">&copy; 2021 Desing Admin dashboard</i></p>
+        <p style="color: #007bff;"><i class="fa fa-child">&copy; 2022 Desing Admin dashboard</i></p>
     </footer>
     </div><!-- /container -->
 </body>

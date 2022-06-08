@@ -20,15 +20,6 @@ elseif($path == 'category' and isset($_GET['id'])) {
 elseif($path == 'products' and isset($_GET['id'])) {
     $response = Controller::ProductsByID($_GET['id']);
 }
-
-
-//-----------------------------------------category by ID
-//-----------------------------------------category by ID
-elseif($path == 'category' and isset($_GET['id'])) {
-    $response = Controller::CategoryByID($_GET['id']);
-}
-
-
 //-------------------------------------------------coments
 elseif($path == 'insertcomment' and isset($_GET['comment'],$_GET['id'])) {
     $response = Controller::InsertComment($_GET['comment'],$_GET['id']);

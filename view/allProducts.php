@@ -2,7 +2,8 @@
 ob_start();
 ?>
 
-    <h1>All Products</h1>
+        <h1>All Products</h1>
+
 
 <?php
 ViewProducts::AllProducts($arr);

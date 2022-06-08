@@ -13,50 +13,38 @@ class Controller
         $arr = Category::getAllCategory();
         include_once 'view/category.php';
     }
-    //-----------------------------------CategoryByID
-    //-----------------------------------CategoryByID
-    public static function CategoryByID($id)
-    {
-        $k = Category::getCategoryByID($id);
-        include_once 'view/readProducts.php';
-    }
+   
     public static function AllProducts()
     {
         $arr = Products::getAllProducts();
         include_once 'view/allProducts.php';
     }
-    public static function ProductsByCatID($id) 
+    public static function ProductsByCatID($id)
     {
-        //$_POST["cat"]= "ZZZ" ;
-        //$_POST["cat"] = "$_GET[products]$_GET[id]";
-        $_POST["cat"]= "$_GET[category]$_GET[name]" ;
-        // $_POST["cat"]= "$_GET[category] $_GET[id] $_GET[name]";
-        // $_POST["cat"]= "$_GET[name]";
-        //$_POST["cat"] = "$_GET['products?id=' . $id . $name]";
-        // $_POST["cat"]= "$row[name]" ;
-        $arr = Products::getProductsByCategoryID($id);
+        $arr = Products::getLast6ProductsByCategoryID($id);
         include_once 'view/catProducts.php';
     }
-    public static function ProductsByID($id) 
+    public static function ProductsByID($id)
     {
         $n = Products::getProductsByID($id);
         include_once 'view/readProducts.php';
     }
 
     //-----------------------------------OverProducts
-    public static function AllOverProducts() 
+    public static function AllOverProducts()
     {
         $arr = OverProducts::getAllOverProducts();
         include_once 'view/startOverProducts.php';
     }
 
-    public static function OverProductsByID($id) 
+    public static function OverProductsByID($id)
     {
         $n = OverProducts::getOverProductsByID($id);
         include_once 'view/readOverProducts.php';
     }
     //-----------------------------------------error
-    public static function error404() {
+    public static function error404()
+    {
         include_once 'view/error404.php';
     }
     //----------------------------------------search
@@ -105,18 +93,16 @@ class Controller
     }
     //--------------------------------- РЕГИСТРАЦИЯ
     public static function registerForm()
-    {
-        include_once('view/formRegister.php');
-    }
-
-    public static function registerUser()
-    {
-        $result = Register::registerUser();
-        include_once('view/answerRegister.php');
-    }
+   {   
+       include_once('view/formRegister.php');
+   }   
+   public static function registerUser()
+   {   
+       $result = Register::registerUser();
+       
+       include_once('view/answerRegister.php');
+   }
 }
 // end class
 // $c - текст комментария
 // id - номер product
-
-// $k - name category

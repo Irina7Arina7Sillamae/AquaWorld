@@ -2,13 +2,18 @@
 ob_start();
 ?>
 
-<h1>Products (categories)<br><?php echo $_POST["cat"]?></h1>
-<!--  <h1>Products (categories)<br><?php echo $_POST[$row['name']]?></h1>  -->
-<!--<h1>Products (categories)<br><?php echo $_POST[$_GET['category'].$_GET['id']]?></h1>  -->
-
-
-<br>
-
+<h1>
+    <?php
+    $idcat = $_GET['id'];
+    $arr2 = Category::getAllCategory();
+    $categories = [];
+    foreach ($arr2 as $value) {
+        $categories[$value['id']] = $value['name'];
+    }
+    echo $categories[$idcat];
+    //echo $_POST[$idcat]
+    ?>
+</h1>
 
 <?php
 ViewProducts::ProductsByCategory($arr);

@@ -8,6 +8,7 @@ body {
 
 h1 {
   margin-bottom: 30px;
+  margin-left: 20px;
   text-shadow: 1px 2px 1px #797979;
   font-weight: bolder;
   width: auto;
@@ -313,5 +314,39 @@ element.style {
 }
 .register {
   color: #007bff;
+}
+
+.itd_play {
+  background-color: #007bff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /*   margin: -200px 1000px;   */
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 4px #4e4e4e;
+}
+
+.itd_triangle {
+  margin-right: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: white;
+  box-shadow: 4px 4px 4px #4e4e4e;
+}
+
+.trigger {
+  /*   margin-top: 20px;   */
+  align-items: center;
+}
+
+.itd-play .zoom {
+  margin-bottom: 15px;
+  box-shadow: 4px 4px 4px #4e4e4e;
 }
 

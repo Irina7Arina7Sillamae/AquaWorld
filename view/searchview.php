@@ -2,7 +2,7 @@
 ob_start();
 
 echo "<h1 >Search result:</h1>";
-echo "<h2><b>". $_GET['search'].":</b></h2>";
+echo "<h2><b>". $_GET['search']."</b></h2>";
 
 
 ViewProducts::AllProducts($arr);

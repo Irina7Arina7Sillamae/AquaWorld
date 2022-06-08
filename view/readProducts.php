@@ -2,20 +2,19 @@
 ob_start();
 ?>
 
-<h1 >ONE Product</h1>
-<?php
-Controller::CategoryByID($_GET['id']);
-?>
+<h1>ONE Product<br>
 
-<br>
+
+
 <?php
+
 ViewProducts::ReadProducts($n);
 
 echo "<br>";
-ViewComments::CommentsForm();
+Controller::Comments($_GET['id']);
 
 echo "<br>";
-Controller::Comments($_GET['id']);
+ViewComments::CommentsForm();
 
 
 $content = ob_get_clean();
