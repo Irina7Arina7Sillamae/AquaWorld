@@ -15,8 +15,8 @@ class OverProducts {
         return $arr;
     }
 
-    public static function getOverProductsByCategoryID($id) {
-        $query = "SELECT * FROM overproducts where category_id=".(string)$id." ORDER BY id DESC";
+    public static function getLast6OverProductsByCategoryID($id) {
+        $query = "SELECT * FROM overproducts where category_id=".(string)$id." ORDER BY id DESC LIMIT 6";
         $db = new database();
         $arr = $db->getAll($query);
         return $arr;
